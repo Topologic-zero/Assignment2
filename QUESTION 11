@@ -1,0 +1,8 @@
+def safe_divide(a, b):
+    try:
+        answer = a / b
+        return f"{a} ÷ {b} = {answer}"
+    except ZeroDivisionError:
+        return "⚠️ Cannot divide by zero!"
+print(safe_divide(10, 2))
+print(safe_divide(5, 0))
