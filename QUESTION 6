@@ -1,0 +1,8 @@
+def countdown_blastoff(n):
+    result = ""
+    for i in range(n, 0, -1):
+        result += str(i) + "\n"
+    result += "🚀 BLASTOFF!"
+    return result
+
+print(countdown_blastoff(3))
