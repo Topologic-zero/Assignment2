@@ -1,0 +1,5 @@
+def magic_number(a, b, c):
+    total = (a + b + c) * 2
+    return str(total) + " is magical!"
+
+print(magic_number(2, 4, 7))
