@@ -1,0 +1,11 @@
+def event_schedule(events):
+    result = ""
+    for event in events:
+        result += f"⏰ {event['time']}: {event['name']}\n"
+    return result
+schedule = [
+    {"time": "09:00", "name": "Standup"},
+    {"time": "10:30", "name": "Design Review"},
+    {"time": "14:00", "name": "Project Planning"}
+]
+print(event_schedule(schedule))
