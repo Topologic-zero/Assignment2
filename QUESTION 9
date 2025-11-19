@@ -1,0 +1,13 @@
+def scoreboard(scores):
+    result = "" 
+    sorted_scores = dict(sorted(scores.items(), key=lambda item: item[1], reverse=True))
+    rank_icons = ["🥇", "🥈", "🥉"]
+    index = 0
+    for name, score in sorted_scores.items():
+        if index < 3:
+            result += f"{rank_icons[index]} {name}: {score}\n"
+        else:
+            result += f"{name}: {score}\n"
+        index += 1
+    return result
+print(scoreboard({"Alice": 95, "Bob": 87, "Charlie": 92, "Dave": 63}))
