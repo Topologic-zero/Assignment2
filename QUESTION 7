@@ -1,0 +1,8 @@
+def name_badge(name):
+    border = "*" * (len(name) + 6)
+    line = "*  " + name + "  *"
+    badge = border + "\n" + line + "\n" + border
+    return badge
+
+print(name_badge("Alice"))
+print(name_badge("Bob"))
