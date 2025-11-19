@@ -1,25 +1,11 @@
 import json
 
-def save_schedule_to_json(filename, schedule):
-    with open(filename, "w") as file:
-        json.dump(schedule, file, indent=4)
-
-
-def load_schedule_from_json(filename):
-    with open(filename, "r") as file:
+    with open(schedule.json, "r") as file:
         return json.load(file)
 
-def print_schedule_from_json(filename):
-    events = load_schedule_from_json(filename)
+
+    load_schedule_from_json(schedule.json)
     result = ""
     for event in events:
-        result += f"⏰ {event['time']}: {event['name']}\n"
-    return result
+      print(  f"⏰ {event['time']}: {event['name']}\n")
 
-schedule14 = [
-    {"time": "09:00", "name": "Standup"},
-    {"time": "10:30", "name": "Design Review"},
-    {"time": "14:00", "name": "Project Planning"}
-]
-save_schedule_to_json("schedule.json", schedule14)
-print(print_schedule_from_json("schedule.json"))
