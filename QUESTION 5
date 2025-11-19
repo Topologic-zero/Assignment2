@@ -1,0 +1,8 @@
+def weather_message(temp):
+    if temp >= 20:
+        return "Sun's out! 😎"
+    else:
+        return "Brrr... bundle up! 🧥"
+
+print(weather_message(25))
+print(weather_message(10))
