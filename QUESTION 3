@@ -1,0 +1,50 @@
+
+
+method 1
+animal_emojis = {
+    "cat": "🐱",
+    "dog": "🐶",
+    "lion": "🦁",
+    "cow": "🐮"
+}
+
+def animal_to_emoji(animal):
+    return animal_emojis.get(animal, "🐾")
+print(animal_to_emoji("dog"))
+print(animal_to_emoji("duck"))
+
+
+
+
+
+
+
+
+or 
+
+method 2
+
+animal_emojis = {
+    "cat": "🐱",
+    "dog": "🐶",
+    "lion": "🦁",
+    "cow": "🐮"
+}
+
+def animal_to_emoji(animal):
+   
+    try:
+        return animal_emojis[animal]
+    except:
+        return "🐾"
+
+print(animal_to_emoji("dog"))
+print(animal_to_emoji("duck"))
+
+
+
+
+
+
+
+
