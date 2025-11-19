@@ -1,0 +1,3 @@
+def hype_it_up(word):
+    return word + "!!!"
+print(hype_it_up("Python"))
