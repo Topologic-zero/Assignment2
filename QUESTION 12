@@ -1,0 +1,6 @@
+def remove_duplicates(items):
+    unique = set(items)
+    sorted_unique = sorted(unique)
+    sorted_unique = [str(x) for x in sorted_unique]
+    return "-".join(sorted_unique)
+print(remove_duplicates([3, 1, 4, 1, 5, 9, 2, 6, 5]))
