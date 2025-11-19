@@ -1,0 +1,5 @@
+def apply_function(func, items):
+    result = [func(x) for x in items]
+    return ", ".join(result)
+
+print(apply_function(str.upper, ["hello", "world", "python"]))
