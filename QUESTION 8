@@ -1,0 +1,5 @@
+def emoji_repeater(emojis, times):
+    repeated_emojis = [emoji * times for emoji in emojis]
+    return "".join(repeated_emojis)
+
+print(emoji_repeater(["😀", "🎉", "⭐"], 2))
